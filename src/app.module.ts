@@ -1,12 +1,14 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { FormService } from './services/form/form.service';
-import { FormController } from './controllers/form/form.controller';
+import { FormController } from './form/controllers/form/form.controller';
+import { FormService } from './form/services/form/form.service';
+import { FormModule } from './form/modules/form.module';
+
 
 @Module({
-  imports: [],
-  controllers: [AppController, FormController],
-  providers: [AppService, FormService],
+  imports: [FormModule],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
