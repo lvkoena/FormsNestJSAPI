@@ -9,7 +9,7 @@ export class FormService {
   submitFormData(createFormDto: CreateFormDto) {
     this.form.push(createFormDto);
     console.log('Form data received:', createFormDto); 
-    return 'Form submitted successfully!';
+    return;
   }
 
   getFormInfo() {
