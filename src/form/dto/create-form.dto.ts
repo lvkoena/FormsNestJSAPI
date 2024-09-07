@@ -1,6 +1,8 @@
 export class CreateFormDto {
     firstName: string;
-    lastName: string;
+    lastName: string
     emailAddress: string;
-    message: string
-}
+    phoneNumber: string;
+    message: string;
+  }
+  
