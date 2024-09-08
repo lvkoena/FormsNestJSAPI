@@ -3,6 +3,8 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { CreateFormDto } from 'src/form/dto/create-form.dto';
 import { Form } from 'src/form/entity/form.entity';
 import { Repository } from 'typeorm/repository/Repository';
+import * as nodemailer from 'nodemailer';
+
 
 @Injectable()
 export class FormService {
